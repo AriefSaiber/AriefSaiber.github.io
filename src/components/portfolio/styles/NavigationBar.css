@@ -1,0 +1,57 @@
+@reference "tailwindcss";
+
+.nav {
+  @apply fixed left-0 right-0 top-0 z-50 border-b border-white/10 bg-black/55 backdrop-blur-xl;
+}
+
+.navWrap {
+  @apply mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8;
+}
+
+.navBrand {
+  @apply flex items-center gap-3;
+}
+
+.navBrandIconWrap {
+  @apply grid h-10 w-10 place-items-center rounded-2xl bg-gradient-to-br from-blue-500 to-red-600 shadow-lg shadow-blue-500/20 transition;
+}
+
+.navBrand:hover .navBrandIconWrap {
+  @apply scale-105;
+}
+
+.navBrandIcon {
+  @apply h-5 w-5 text-white;
+}
+
+.navEyebrow {
+  @apply text-sm font-semibold uppercase tracking-[0.25em] text-slate-400;
+}
+
+.navTitle {
+  @apply font-bold text-white;
+}
+
+.navDesktopLinks {
+  @apply hidden items-center gap-2 md:flex;
+}
+
+.navLink {
+  @apply rounded-full px-4 py-2 text-sm font-medium text-slate-300 transition hover:bg-white/10 hover:text-white;
+}
+
+.navMenuToggle {
+  @apply rounded-xl border border-white/10 p-2 text-white md:hidden;
+}
+
+.navMobilePanel {
+  @apply border-t border-white/10 bg-slate-950 md:hidden;
+}
+
+.navMobileLinks {
+  @apply mx-auto flex max-w-7xl flex-col gap-2 px-5 py-4;
+}
+
+.navMobileLink {
+  @apply rounded-xl px-4 py-3 text-slate-200 hover:bg-white/10;
+}

@@ -1,0 +1,133 @@
+@reference "tailwindcss";
+
+.contact {
+  @apply relative overflow-hidden bg-black px-5 py-24 lg:px-8;
+}
+
+.contactContainer {
+  @apply relative mx-auto max-w-7xl;
+}
+
+.contactGrid {
+  @apply grid gap-8 lg:grid-cols-[0.85fr_1.15fr];
+}
+
+.contactInfoCard {
+  @apply rounded-[2rem] border-white/10 bg-slate-950/80 text-white;
+}
+
+.contactFormCard {
+  @apply rounded-[2rem] border-white/10 bg-white/[0.04] text-white shadow-2xl backdrop-blur;
+}
+
+.contactCardContent {
+  @apply p-7 md:p-9;
+}
+
+.contactEmailLink {
+  @apply flex items-center gap-4 rounded-2xl border border-white/10 bg-white/[0.04] p-4 text-slate-200 transition hover:border-blue-400/60;
+}
+
+.contactLinkedinLink {
+  @apply flex items-center gap-4 rounded-2xl border border-white/10 bg-white/[0.04] p-4 text-slate-200 transition hover:border-blue-400/60;
+}
+
+.contactGithubLink {
+  @apply flex items-center gap-4 rounded-2xl border border-white/10 bg-white/[0.04] p-4 text-slate-200 transition hover:border-blue-400/60;
+}
+
+.contactForm {
+  @apply space-y-5;
+}
+
+.contactFormRow {
+  @apply grid gap-5 md:grid-cols-2;
+}
+
+.contactLabel {
+  @apply block;
+}
+
+.contactLabelText {
+  @apply mb-2 block text-sm font-medium text-slate-300;
+}
+
+.contactInput {
+  @apply w-full rounded-2xl border border-white/10 bg-black/40 px-4 py-3 text-white outline-none transition placeholder:text-slate-600;
+}
+
+.contactInputBlue {
+  @apply focus:border-blue-400;
+}
+
+.contactInputRed {
+  @apply focus:border-red-400;
+}
+
+.contactTextarea {
+  @apply w-full resize-none rounded-2xl border border-white/10 bg-black/40 px-4 py-3 text-white outline-none transition placeholder:text-slate-600 focus:border-blue-400;
+}
+
+.contactSubmit {
+  @apply h-12 w-full rounded-full bg-gradient-to-r from-blue-600 to-red-600 text-base font-semibold text-white hover:scale-[1.01];
+}
+
+.contactSuccess {
+  @apply rounded-2xl border border-blue-400/30 bg-blue-500/10 p-4 text-center text-blue-100;
+}
+
+.contactBlobLeft {
+  @apply -left-20 top-20 h-72 w-72 bg-red-600;
+}
+
+.contactBlobRight {
+  @apply -right-20 bottom-10 h-72 w-72 bg-blue-600;
+}
+
+.contactTitle {
+  @apply text-2xl font-bold;
+}
+
+.contactText {
+  @apply mt-4 leading-7 text-slate-300;
+}
+
+.contactMailWrap {
+  @apply mt-8 space-y-4;
+}
+
+.contactMailIcon {
+  @apply h-5 w-5 text-blue-300;
+}
+
+.contactLinkedinWrap {
+  @apply mt-8 space-y-4;
+}
+
+.contactLinkedinIcon {
+  @apply h-5 w-5 text-blue-300;
+}
+
+.contactGithubWrap {
+  @apply mt-8 space-y-4;
+}
+
+.contactGithubIcon {
+  @apply h-5 w-5 text-blue-300;
+}
+
+.contactSendIcon {
+  @apply ml-2 h-5 w-5;
+}
+
+.contactError {
+  margin-top: 0.75rem;
+  color: #f87171;
+  font-size: 0.875rem;
+}
+
+.contactSuccess {
+  margin-top: 0.75rem;
+  color: #4ade80;
+  font-size: 0.875rem;
+}

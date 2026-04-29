@@ -1,0 +1,125 @@
+@reference "tailwindcss";
+
+.build {
+  @apply relative overflow-hidden bg-black px-5 py-24 lg:px-8;
+}
+
+.buildBg {
+  @apply absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(239,68,68,0.16),transparent_42%),radial-gradient(circle_at_70%_55%,rgba(37,99,235,0.18),transparent_45%)];
+}
+
+.buildContainer {
+  @apply relative mx-auto max-w-7xl;
+}
+
+.buildGrid {
+  @apply grid gap-8 lg:grid-cols-[0.95fr_1.05fr];
+}
+
+.buildHeroCard {
+  @apply rounded-[2rem] border border-white/10 bg-slate-950/80 text-white shadow-2xl;
+}
+
+.buildHeroHeader {
+  @apply flex items-start gap-4 px-6 pb-0 pt-7 md:px-8 md:pt-8;
+}
+
+.buildHeroBadge {
+  @apply grid h-14 w-14 flex-none place-items-center rounded-3xl bg-gradient-to-br from-blue-600 to-red-600;
+}
+
+.buildHeroBadgeIcon {
+  @apply h-7 w-7 text-white;
+}
+
+.buildHeroBadgeLogo {
+  @apply object-contain;
+}
+
+.buildHeroTitle {
+  @apply text-2xl font-black tracking-tight md:text-3xl;
+}
+
+.buildHeroDescription {
+  @apply mt-2 text-base leading-7 text-slate-300;
+}
+
+.buildHeroContent {
+  @apply px-6 pb-7 pt-5 md:px-8 md:pb-8;
+}
+
+.buildSteps {
+  @apply space-y-4;
+}
+
+.buildStep {
+  @apply flex items-start gap-4 rounded-2xl border border-white/10 bg-white/[0.035] p-4;
+}
+
+.buildStepDot {
+  @apply mt-1.5 h-3 w-3 flex-none rounded-full;
+}
+
+.buildStepDotBlue {
+  @apply bg-blue-400 shadow-[0_0_0_4px_rgba(59,130,246,0.15)];
+}
+
+.buildStepDotRed {
+  @apply bg-red-400 shadow-[0_0_0_4px_rgba(248,113,113,0.15)];
+}
+
+.buildStepDotNeutral {
+  @apply bg-slate-400 shadow-[0_0_0_4px_rgba(148,163,184,0.12)];
+}
+
+.buildStepTitle {
+  @apply text-sm font-semibold text-white;
+}
+
+.buildStepText {
+  @apply mt-1 text-sm leading-6 text-slate-300;
+}
+
+.buildPillars {
+  @apply grid gap-4 sm:grid-cols-2;
+}
+
+.buildPillarCard {
+  @apply rounded-[1.7rem] border border-white/10 bg-white/[0.035] text-white transition hover:-translate-y-1 hover:border-blue-400/40;
+}
+
+.buildPillarHeader {
+  @apply flex items-start gap-4 px-6 pb-0 pt-6;
+}
+
+.buildPillarIconWrap {
+  @apply grid h-12 w-12 flex-none place-items-center rounded-2xl;
+}
+
+.buildPillarIconWrapBlue {
+  @apply bg-white text-white ring-1 ring-white/5;
+}
+
+.buildPillarIconWrapRed {
+  @apply bg-white text-white ring-1 ring-white/5;
+}
+
+.buildPillarIcon {
+  @apply h-6 w-6 object-contain;
+}
+
+.buildPillarTitle {
+  @apply text-lg font-bold;
+}
+
+.buildPillarHighlight {
+  @apply mt-1 text-xs font-semibold uppercase tracking-[0.18em] text-slate-400;
+}
+
+.buildPillarContent {
+  @apply px-6 pb-6 pt-3;
+}
+
+.buildPillarDescription {
+  @apply leading-7 text-slate-300;
+}

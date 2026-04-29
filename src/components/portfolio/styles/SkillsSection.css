@@ -1,0 +1,101 @@
+@reference "tailwindcss";
+
+.skills {
+  @apply relative overflow-hidden bg-black px-5 py-24 lg:px-8;
+}
+
+.skillsBg {
+  @apply absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(37,99,235,0.18),transparent_35%)];
+}
+
+.skillsContainer {
+  @apply relative mx-auto max-w-7xl;
+}
+
+.skillsGrid {
+  @apply grid gap-8 lg:grid-cols-[0.9fr_1.1fr];
+}
+
+.skillsPanel {
+  @apply rounded-[2rem] border-white/10 bg-slate-950/80 text-white;
+}
+
+.skillsPanelContent {
+  @apply p-6 md:p-8;
+}
+
+.skillsPanelHeader {
+  @apply flex items-center gap-4;
+}
+
+.skillsIconWrap {
+  @apply grid h-16 w-16 place-items-center rounded-3xl bg-gradient-to-br from-blue-600 to-red-600;
+}
+
+.skillsActiveIcon {
+  @apply h-8 w-8;
+}
+
+.skillsSelectedLabel {
+  @apply text-sm text-slate-400;
+}
+
+.skillsSelectedName {
+  @apply text-3xl font-black;
+}
+
+.skillsConfidence {
+  @apply mt-8;
+}
+
+.skillsConfidenceHead {
+  @apply mb-3 flex items-center justify-between text-sm text-slate-300;
+}
+
+.skillsConfidenceBar {
+  @apply h-4 overflow-hidden rounded-full bg-white/10;
+}
+
+.skillsConfidenceLevel {
+  @apply h-full rounded-full bg-gradient-to-r from-blue-500 to-red-500;
+}
+
+.skillsDescription {
+  @apply mt-7 leading-7 text-slate-300;
+}
+
+.skillsCards {
+  @apply grid gap-4 sm:grid-cols-2;
+}
+
+.skillsSkillBtn {
+  @apply rounded-[1.7rem] border p-5 text-left transition hover:-translate-y-1;
+}
+
+.skillsSkillBtnActive {
+  @apply border-blue-400 bg-blue-500/15 shadow-xl shadow-blue-500/10;
+}
+
+.skillsSkillBtnInactive {
+  @apply border-white/10 bg-white/[0.035] hover:border-red-400/50;
+}
+
+.skillsSkillIcon {
+  @apply h-7 w-7;
+}
+
+.skillsSkillIconActive {
+  @apply text-blue-300;
+}
+
+.skillsSkillIconInactive {
+  @apply text-slate-400;
+}
+
+.skillsSkillName {
+  @apply mt-4 text-xl font-bold text-white;
+}
+
+.skillsSkillHelper {
+  @apply mt-2 text-sm text-slate-400;
+}
