@@ -180,10 +180,14 @@ export function ContactSection() {
                 <p className="note">{contactMessages.form.note}</p>
 
                 {isSent && (
-                  <p className="contactSuccess">Message sent successfully.</p>
+                  <p className="contactSuccess">
+                    {contactMessages.form.success}
+                  </p>
                 )}
 
-                {errorMessage && <p className="contactError">{errorMessage}</p>}
+                {errorMessage && (
+                  <p className="contactError">{contactMessages.form.error}</p>
+                )}
               </form>
             </CardContent>
           </Card>

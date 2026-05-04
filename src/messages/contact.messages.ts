@@ -28,8 +28,8 @@ export const contactMessages = {
     messagePlaceholder: "Tell me about your inquiry...",
     note: "p/s: Do note that this may take a while since its a free server :)",
     submit: "Send Message",
-    success:
-      "Message preview submitted successfully. Connect this form to your backend or email service to receive real messages.",
+    success: "Message sent successfully.",
+    error: "Message failed to send, will try to fix soon",
   },
 };
 
