@@ -177,6 +177,8 @@ export function ContactSection() {
                   <Send className="contactSendIcon" />
                 </Button>
 
+                <p className="note">{contactMessages.form.note}</p>
+
                 {isSent && (
                   <p className="contactSuccess">Message sent successfully.</p>
                 )}

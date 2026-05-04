@@ -25,7 +25,8 @@ export const contactMessages = {
       "Other",
     ],
     messageLabel: "Message",
-    messagePlaceholder: "Tell me about your idea, timeline, and main goals...",
+    messagePlaceholder: "Tell me about your inquiry...",
+    note: "p/s: Do note that this may take a while since its a free server :)",
     submit: "Send Message",
     success:
       "Message preview submitted successfully. Connect this form to your backend or email service to receive real messages.",

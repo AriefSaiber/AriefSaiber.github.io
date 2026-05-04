@@ -131,3 +131,7 @@
   color: #4ade80;
   font-size: 0.875rem;
 }
+
+.note {
+  @apply mt-3 text-white text-sm text-center;
+}
