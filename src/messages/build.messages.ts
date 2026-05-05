@@ -69,11 +69,10 @@ export const howItsMadeMessages = {
     {
       title: "Deployment",
       description:
-        "Deployed straight from GitHub so updates are repeatable and hands-off once merged.",
-      highlight: "GitHub Deployments",
+        "Deployed straight from GitHub so updates are repeatable and hands-off once merged while backend is handled by Render for simplicity.",
+      highlight: "GitHub Deploy/Render",
       logoKey: "github",
       tint: "red",
     },
   ],
 } as const;
-

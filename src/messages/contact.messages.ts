@@ -34,10 +34,5 @@ export const contactMessages = {
 };
 
 export const footerMessages = {
-  copyright: "© 2026 React / Flutter Developer Portfolio. Built with React.",
-  links: [
-    { label: "Top", href: "#home" },
-    { label: "Projects", href: "#projects" },
-    { label: "Contact", href: "#contact" },
-  ],
+  copyright: "© 2026 Made with passion by Arief Shamsuddin.",
 };

@@ -7,8 +7,8 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { SectionTitle } from "@/components/portfolio/common/SectionTitle";
-import { howItsMadeMessages } from "@/messages/howItsMade.messages";
-import "@/components/portfolio/styles/HowItsMadeSection.css";
+import { howItsMadeMessages as buildMessages } from "@/messages/build.messages";
+import "@/components/portfolio/styles/BuildSection.css";
 import shadcnLogo from "@/assets/shadcn_logo.png";
 import lucideLogo from "@/assets/lucide_logo.png";
 import gitActionsLogo from "@/assets/gitactions_logo.png";
@@ -29,9 +29,9 @@ export function BuildSection() {
       <div className="buildBg" />
       <div className="buildContainer">
         <SectionTitle
-          eyebrow={howItsMadeMessages.eyebrow}
-          title={howItsMadeMessages.title}
-          description={howItsMadeMessages.description}
+          eyebrow={buildMessages.eyebrow}
+          title={buildMessages.title}
+          description={buildMessages.description}
         />
 
         <div className="buildGrid">
@@ -42,16 +42,16 @@ export function BuildSection() {
               </div>
               <div>
                 <CardTitle className="buildHeroTitle">
-                  {howItsMadeMessages.hero.title}
+                  {buildMessages.hero.title}
                 </CardTitle>
                 <CardDescription className="buildHeroDescription">
-                  {howItsMadeMessages.hero.description}
+                  {buildMessages.hero.description}
                 </CardDescription>
               </div>
             </CardHeader>
             <CardContent className="buildHeroContent">
               <div className="buildSteps">
-                {howItsMadeMessages.hero.steps.map((step) => (
+                {buildMessages.hero.steps.map((step) => (
                   <div key={step.title} className="buildStep">
                     <span
                       className={`buildStepDot ${
@@ -73,7 +73,7 @@ export function BuildSection() {
           </Card>
 
           <div className="buildPillars">
-            {howItsMadeMessages.pillars.map((pillar) => {
+            {buildMessages.pillars.map((pillar) => {
               const logoSrc = logoMap[pillar.logoKey];
               return (
                 <Card key={pillar.title} className="buildPillarCard">
